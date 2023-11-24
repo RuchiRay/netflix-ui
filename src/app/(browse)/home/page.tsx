@@ -8,9 +8,11 @@ const HomePage = () => {
     <div>
       <Banner />
       <Row title='Continue watching for Ruchi Ray' showBar fetchUrl={requests.fetchContinueWatching} id="CW" />
+      <Row title='TV shows' fetchUrl={requests.discoverSeries} id="TVS" />
       <Row title='Top Rated on Netflix' fetchUrl={requests.fetchTopRated} id="TRON" />
       <Row title='Trending Now' fetchUrl={requests.fetchTrending} id='TN' />
       <Row title='Netflix Originals' fetchUrl={requests.fetchNetflixOriginals} id='NO' />
+      <Row title='Exciting crime tv series' fetchUrl={requests.fetchCrimeSeries} id='CS' />
       <Row title='Action' fetchUrl={requests.fetchActionMovies} id='AC' />
       <Row title='Comedy' fetchUrl={requests.fetchComedySeries} id='CO' />
       <Row title='Romance' fetchUrl={requests.fetchRomanceMovies} id='RO' />
