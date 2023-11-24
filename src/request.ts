@@ -1,5 +1,4 @@
 const NEXT_APP_API_KEY = process.env.NEXT_APP_API_KEY;
-console.log(NEXT_APP_API_KEY,'key');
 
 export const LANG = "en-US";
 export const REGION = "US";

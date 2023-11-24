@@ -5,13 +5,13 @@ import { requests } from "../request";
 import truncate from "../utilities/truncate";
 import { BsFillPlayFill } from "react-icons/bs";
 import { BiInfoCircle } from "react-icons/bi";
-export const Banner = async() => {
+export const Banner = async () => {
 
-const request = await axios.get(requests.fetchNetflixOriginals);
-const movie =
-        request.data.results[
-          Math.floor(Math.random() * (request.data.results.length - 1))
-        ];
+  const request = await axios.get(requests.fetchNetflixOriginals);
+  const movie =
+    request.data.results[
+    Math.floor(Math.random() * (request.data.results.length - 1))
+    ];
 
   return (
     <div className="banner-wrapper">
@@ -36,7 +36,7 @@ const movie =
               {" "}
               <BsFillPlayFill className="text-4xl text-black mr-2" /> <span className="text-black font-semibold">Play</span>
             </button>
-            <button className="h-12 w-40 rounded-md bg-neutral-600  flex justify-center items-center"> <BiInfoCircle className="text-2xl mr-2"/> <span>More Info</span></button>
+            <button className="h-12 w-40 rounded-md bg-neutral-600  flex justify-center items-center"> <BiInfoCircle className="text-2xl mr-2" /> <span>More Info</span></button>
           </div>
           <div className="text-lg mt-4 w-[34rem]">
             <p>{truncate(movie?.overview)}</p>

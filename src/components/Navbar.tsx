@@ -12,7 +12,6 @@ export const Navbar = () => {
     router.push('/login')
   };
   const pathname = usePathname()
-  console.log(pathname, 'pathname');
   useEffect(() => {
     const handler = () => {
       if (window.scrollY >= 50)
