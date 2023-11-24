@@ -7,18 +7,21 @@ import React, { useState } from 'react'
 export const Navbar = () => {
     const [bgBlack, setBgBlack] = useState(false)
     const pathname = usePathname()
+    console.log(pathname,'pathname');
+    if(pathname==='/')
+    return
   return (
     <div className={`${bgBlack && 'bg-black'} fade-top transition-colors ease-linear items-center  flex fixed w-full justify-between py-3  px-12 left-0 top-0 z-[1]`}>
       <div className="flex items-center">
-        <div className="w-40">
+        <div className="w-28">
           <Image
             src="/logo.png"
             alt="red netflix logo text png"
-            width={95}
-            height={25}
+            width={80}
+            height={10}
           />
         </div>
-        <div className="text-white flex gap-8 text-lg ml-12">
+        <div className="text-white flex gap-8 text-sm ml-12">
           <Link
             href="/"
             // className={({ isActive }) => (isActive ? 'font-bold' : "")}

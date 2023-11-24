@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/Navbar'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +19,23 @@ export default function RootLayout({
   return (
     <html lang="en">
      
-      <body className={inter.className}>
+      {/* <body className={inter.className}>
         <Navbar/>
-        {children}</body>
+        {children}</body> */}
+      <body className={inter.className}>
+      <div className=" items-center justify-center flex flex-col w-full h-screen bg-cover min-h-[650px] black-gradient ">
+      <div className="fixed top-8 px-12 w-full">
+        <div className="w-48">
+          <Image
+            src="/logo.png"
+            alt="red netflix logo text png"
+            width={80}
+            height={10}
+          />
+        </div>
+      </div>
+      {children}
+    </div></body>
     </html>
   )
 }

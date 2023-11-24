@@ -28,7 +28,7 @@
   [multiple],
   textarea,
   select {
-    @apply focus:ring-0 focus:border-0 border-none text-black;
+    @apply focus:ring-0 focus:border-0 border-none focus:border-none focus-visible:border-none focus-visible:right-0 focus-visible:outline-none 
   }
 }
 @layer components {
@@ -73,6 +73,6 @@
         rgba(0, 0, 0, 0.4) 60%,
         rgba(0, 0, 0, 0.8) 95%
       ),
-      url("./images/auth-bg.jpg");
+      url("/auth-bg.jpg");
   }
 }
