@@ -5,10 +5,7 @@ import Select, { components ,ControlProps} from "react-select";
 import { FaGlobe } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
 
-// type Options={
-//   value:string
-//   label:string
-// }
+
 
 export default function Home() {
   const options = [
@@ -38,8 +35,15 @@ export default function Home() {
   };
   return (
     <div className=" items-center justify-center flex flex-col w-full h-screen bg-cover min-h-[650px] black-gradient ">
-        <div className="flex justify-end fixed top-8 px-12 w-full">
-       
+        <div className="flex justify-between fixed top-8 px-12 w-full">
+        <div className="w-48">
+            <Image
+              src="/logo.png"
+              alt="red netflix logo text png"
+              width={80}
+              height={10}
+            />
+          </div>
           <div className="flex  gap-8">
             <div>
               <Select
