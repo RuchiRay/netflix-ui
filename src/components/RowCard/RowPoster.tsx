@@ -34,13 +34,13 @@ export const RowPoster = async ({ id, type }: RowPoster) => {
     return (
         <div className='p-4'>
             <Top />
-            <p className='text-green-500 mt-4'>{findRandom()}% Match</p>
             <div className="flex gap-2 items-center mt-2 text-white/80">
+                <p className='text-green-500'>{findRandom()}% Match</p>
                 <div className='border text-sm p-1 border-neutral-500'>U/A 16+</div>
                 <p>{data?.seasons?.length ?? 1} Season</p>
                 <div className='border p-1 text-xs border-neutral-500'>HD</div>
             </div>
-            <div className="flex gap-2 mt-2 items-center">
+            <div className="flex gap-2 mt-2 text-sm items-center">
                 {
                     data.genres.map((genre: any, index: any) => {
                         return <div key={genre.id} className="flex items-center gap-2">

@@ -1,5 +1,5 @@
 import { Banner } from '@/components/Banner'
-import { Row } from '@/components/Row'
+import { RowCard } from '@/components/RowCard/RowCard'
 import { requests } from '@/request'
 import React from 'react'
 
@@ -7,8 +7,8 @@ const HomePage = () => {
   return (
     <div>
       <Banner />
-      <Row title='Continue watching for Ruchi Ray' type='movie' showBar fetchUrl={requests.fetchContinueWatching} id="CW" />
-      <Row title='TV shows' type='tv' fetchUrl={requests.discoverSeries} id="TVS" />
+      <RowCard title='Continue watching for Ruchi Ray' type='movie' showBar fetchUrl={requests.fetchContinueWatching} id="CW" />
+      {/* <RowCard title='TV shows' type='tv' fetchUrl={requests.discoverSeries} id="TVS" /> */}
       {/* <Row title='Top Rated on Netflix' type='movie' fetchUrl={requests.fetchTopRated} id="TRON" /> */}
       {/* <Row title='Trending Now' fetchUrl={requests.fetchTrending} id='TN' />
       <Row title='Netflix Originals' fetchUrl={requests.fetchNetflixOriginals} id='NO' />
