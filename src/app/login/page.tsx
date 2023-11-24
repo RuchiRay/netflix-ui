@@ -14,16 +14,19 @@ const Login = () => {
         <input
           type="email"
           placeholder="Email"
+          autoComplete=''
           className="h-12 rounded text-white pl-4 bg-neutral-600"
         />
         <input
           type="password"
+          autoComplete=''
           placeholder="Password"
           className="h-12 rounded text-white bg-neutral-600 pl-4"
         />
         <button
           type="submit"
           className="bg-red-700 h-12 rounded text-xl"
+          onClick={() => router.push("/home")}
         >
           Sign In
         </button>

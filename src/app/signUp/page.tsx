@@ -13,17 +13,20 @@ const SignUp = () => {
           <input
             type="email"
             placeholder="Email"
+            autoComplete=''
             className="h-12 rounded text-white pl-4 bg-neutral-600"
 
           />
           <input
             type="password"
+            autoComplete=''
             placeholder="Password"
             className="h-12 rounded text-white pl-4 bg-neutral-600"
 
           />
           <input
             type="password"
+            autoComplete=''
             placeholder="Repeat your password"
             className="h-12 rounded text-white pl-4 bg-neutral-600"
 
@@ -31,6 +34,7 @@ const SignUp = () => {
           <button
             type="submit"
             className="bg-red-700 h-12 rounded text-xl"
+            onClick={() => router.push("/home")}
           >
             Sign Up
           </button>
