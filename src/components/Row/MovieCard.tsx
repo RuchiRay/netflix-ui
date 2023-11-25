@@ -12,7 +12,7 @@ export const MovieCard = ({ imgSrc, type, id }: MovieCard) => {
   return (
     <div
       key={id}
-      className="shrink-0 transition-all duration-200 hover:z-10 hover:w-[320px] shadow-lg hover:h-[285px] h-[128px] group  bg-neutral-900 object-cover rounded-md"
+      className="shrink-0 cursor-pointer transition-all duration-200 hover:z-10 hover:w-[320px] shadow-lg hover:h-[285px] h-[128px] group  bg-neutral-900 object-cover rounded-md"
     >
       <div className="bg-neutral-500 rounded-md w-[228px] h-[128px] group-hover:w-[320px] group-hover:h-[150px]">
         {imgSrc && (

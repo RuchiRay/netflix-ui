@@ -15,20 +15,20 @@ const HomePage = () => {
         key="CW"
         id="CW"
       />
-      <Row
+      {/* <Row
         title="TV shows"
         type="tv"
         fetchUrl={requests.discoverSeries}
         key="TVS"
         id="TVS"
-      />
-      <Row
+      /> */}
+      {/* <Row
         title="Top Rated on Netflix"
         type="movie"
         fetchUrl={requests.fetchTopRated}
         key="TRON"
         id="TRON"
-      />
+      /> */}
       {/* <Row
         title="Trending Now"
         type="movie"
@@ -36,34 +36,34 @@ const HomePage = () => {
         key="TN"
         id="TN"
       /> */}
-      <Row
+      {/* <Row
         type="tv"
         title="Netflix Originals"
         fetchUrl={requests.fetchNetflixOriginals}
         id="NO"
         key="NO"
-      />
-      <Row
+      /> */}
+      {/* <Row
         type="tv"
         title="Exciting crime tv series"
         fetchUrl={requests.fetchCrimeSeries}
         id="CS"
         key="CS"
-      />
-      <Row
+      /> */}
+      {/* <Row
         type="movie"
         title="Action"
         fetchUrl={requests.fetchActionMovies}
         id="AC"
         key="AC"
-      />
-      <Row
+      /> */}
+      {/* <Row
         type="tv"
         title="Comedy"
         fetchUrl={requests.fetchComedySeries}
         id="CO"
         key="CO"
-      />
+      /> */}
       {/* <Row
         type="movie"
         title="Romance"
@@ -89,12 +89,12 @@ const HomePage = () => {
         fetchUrl={requests.fetchAnimationSeries}
         id="AN"
       /> */}
-      <Row
+      {/* <Row
         type="movie"
         title="Upcoming"
         fetchUrl={requests.fetchUpcomingMovies}
         id="UP"
-      />
+      /> */}
     </div>
   );
 };

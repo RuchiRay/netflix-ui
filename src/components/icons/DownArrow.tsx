@@ -9,7 +9,7 @@ const DownArrow = ({ setOpen }: DownArrow) => {
   return (
     <div
       onClick={() => setOpen(true)}
-      className="w-10 flex   h-10 items-center border border-neutral-500 justify-center rounded-full"
+      className="w-10 flex cursor-pointer  h-10 items-center border border-neutral-500 justify-center rounded-full"
     >
       <FaChevronDown className="text-xl" />
     </div>
