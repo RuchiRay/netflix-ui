@@ -14,7 +14,12 @@ const HomePage = () => {
         fetchUrl={requests.fetchContinueWatching}
         id="CW"
       />
-      {/* <RowCard title='TV shows' type='tv' fetchUrl={requests.discoverSeries} id="TVS" /> */}
+      <Row
+        title="TV shows"
+        type="tv"
+        fetchUrl={requests.discoverSeries}
+        id="TVS"
+      />
       {/* <Row title='Top Rated on Netflix' type='movie' fetchUrl={requests.fetchTopRated} id="TRON" /> */}
       {/* <Row title='Trending Now' fetchUrl={requests.fetchTrending} id='TN' />
       <Row title='Netflix Originals' fetchUrl={requests.fetchNetflixOriginals} id='NO' />

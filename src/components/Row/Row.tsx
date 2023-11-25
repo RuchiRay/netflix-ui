@@ -40,9 +40,9 @@ export const Row = async ({
   return (
     <div className="ml-12">
       <h2 className="font-medium text-xl">{title}</h2>
-      <div className="relative ">
+      <div className="relative -mt-14 ">
         <div
-          className="flex overflow-x-scroll items-center scroll-smooth"
+          className="flex  h-72 overflow-x-scroll gap-2 items-center scroll-smooth"
           id={id}
         >
           {movies.map((movie: any, index: any) => {
