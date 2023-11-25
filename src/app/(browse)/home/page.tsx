@@ -7,14 +7,14 @@ const HomePage = () => {
   return (
     <div>
       <Banner />
-      {/* <Row
+      <Row
         title="Continue watching for Ruchi Ray"
         type="movie"
         showBar
         fetchUrl={requests.fetchContinueWatching}
         key="CW"
         id="CW"
-      /> */}
+      />
       {/* <Row
         title="TV shows"
         type="tv"
