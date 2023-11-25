@@ -50,7 +50,7 @@ export const DetailModal = ({
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full pb-10  max-w-4xl transform overflow-hidden rounded-md bg-neutral-900 text-left align-middle shadow-xl transition-all">
+              <Dialog.Panel className="w-full pb-10 max-w-2xl  lg:max-w-4xl transform overflow-hidden rounded-md bg-neutral-900 text-left align-middle shadow-xl transition-all">
                 <div className="w-full  relative h-[450px]">
                   <Image
                     className="rounded-md rounded-b-none"
@@ -78,7 +78,7 @@ export const DetailModal = ({
 
                   <div className="fade-bottom"></div>
                 </div>
-                <div className="flex mt-4 justify-between">
+                <div className="flex mt-4 gap-2 flex-wrap justify-between">
                   <div className="px-10 flex flex-col gap-2">
                     <div className="flex gap-2 items-center">
                       <p className="text-green-500">{findRandom()}% Match</p>

@@ -6,7 +6,7 @@ import truncate from "@/utilities/truncate";
 
 export const MovieCard = ({ item }: any) => {
   return (
-    <div className="h-[336px]">
+    <div className="">
       <div className="w-full h-[134px]">
         <Image
           className="rounded-md rounded-b-none"
@@ -18,7 +18,7 @@ export const MovieCard = ({ item }: any) => {
           height={128}
         />
       </div>
-      <div className="w-full h-[200px] bg-neutral-700 p-4">
+      <div className="w-full h-[250px] lg:h-[200px] bg-neutral-700 p-4">
         <div className="flex w-full justify-between items-center">
           <div>
             <p className="text-green-500">{findRandom()}% Match</p>
