@@ -14,20 +14,20 @@ const HomePage = () => {
         key="CW"
         id="CW"
       />
-      {/* <Row
+      <Row
         title="TV shows"
         type="tv"
         fetchUrl={requests.discoverSeries}
         key="TVS"
         id="TVS"
-      /> */}
-      {/* <Row
+      />
+      <Row
         title="Top Rated on Netflix"
         type="movie"
         fetchUrl={requests.fetchTopRated}
         key="TRON"
         id="TRON"
-      /> */}
+      />
       {/* <Row
         title="Trending Now"
         type="movie"
@@ -42,13 +42,13 @@ const HomePage = () => {
         id="NO"
         key="NO"
       /> */}
-      {/* <Row
+      <Row
         type="tv"
         title="Exciting crime tv series"
         fetchUrl={requests.fetchCrimeSeries}
         id="CS"
         key="CS"
-      /> */}
+      />
       {/* <Row
         type="movie"
         title="Action"
@@ -76,12 +76,12 @@ const HomePage = () => {
         fetchUrl={requests.fetchHorrorMovies}
         id="HO"
       /> */}
-      {/* <Row
+      <Row
         type="tv"
         title="Adventure"
         fetchUrl={requests.fetchActionAdventureSeries}
         id="AD"
-      /> */}
+      />
       {/* <Row
         type="tv"
         title="Animation"
