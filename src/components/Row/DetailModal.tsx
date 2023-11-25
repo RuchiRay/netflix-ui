@@ -6,6 +6,7 @@ import { Add } from "../icons/Add";
 import { Like } from "../icons/Like";
 import { Cross } from "../icons/Cross";
 import { findRandom } from "@/utilities/findRandom";
+import { Volume } from "../icons/Volume";
 
 type DetailModal = {
   open: boolean;
@@ -53,14 +54,21 @@ export const DetailModal = ({ open, closeModal, data }: DetailModal) => {
                     width={228}
                     height={128}
                   />
-                  <div className="flex px-10 absolute bottom-24 l gap-2 items-center">
-                    <PlayButton />
-                    <Add />
-                    <Like />
+                  <div className="absolute z-10 inset-0 flex h-full justify-between flex-col p-10 pb-20">
+                    <div className="ml-auto" onClick={closeModal}>
+                      <Cross />
+                    </div>
+                    <p className="text-4xl font-bold">{data?.original_title}</p>
+                    <div className="flex justify-between">
+                      <div className="flex  gap-2 items-center">
+                        <PlayButton />
+                        <Add />
+                        <Like />
+                      </div>
+                      <Volume />
+                    </div>
                   </div>
-                  <div onClick={closeModal} className="absolute right-8 top-8">
-                    <Cross />
-                  </div>
+
                   <div className="fade-bottom"></div>
                 </div>
                 <div className="flex mt-4 justify-between">
