@@ -7,9 +7,10 @@ import { findRandom } from "@/utilities/findRandom";
 type CardInfo = {
   id: number;
   type: string;
+  allData: any;
 };
 
-export const CardInfo = async ({ id, type }: CardInfo) => {
+export const CardInfo = async ({ id, type, allData }: CardInfo) => {
   const NEXT_APP_API_KEY = process.env.NEXT_APP_API_KEY;
 
   // const [details, setdetails] = useState()
@@ -18,7 +19,6 @@ export const CardInfo = async ({ id, type }: CardInfo) => {
   const req = await axios.get(url);
   const data = req.data;
   // const data: any = [];
-  console.log(req.data, "url");
 
   // console.log(req, 'req', NEXT_APP_API_KEY, 'hello');
 
@@ -34,7 +34,7 @@ export const CardInfo = async ({ id, type }: CardInfo) => {
 
   return (
     <div className="p-4">
-      <Top data={data} />
+      <Top data={data} moreData={allData} />
       {/* <div className="flex gap-2 items-center mt-2 text-white/80">
                 <p className='text-green-500'>{findRandom()}% Match</p>
                 <div className='border text-sm p-1 border-neutral-500'>U/A 16+</div>

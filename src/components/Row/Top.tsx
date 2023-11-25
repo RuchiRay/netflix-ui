@@ -7,7 +7,7 @@ import { FaChevronDown } from "react-icons/fa";
 import { Dialog, Transition } from "@headlessui/react";
 import { DetailModal } from "./DetailModal";
 
-export const Top = ({ data }: any) => {
+export const Top = ({ data, moreData }: any) => {
   const [open, setOpen] = useState(false);
 
   function closeModal() {
@@ -32,7 +32,12 @@ export const Top = ({ data }: any) => {
       >
         <FaChevronDown className="text-xl" />
       </div>
-      <DetailModal open={open} data={data} closeModal={closeModal} />
+      <DetailModal
+        moreData={moreData}
+        open={open}
+        data={data}
+        closeModal={closeModal}
+      />
     </div>
   );
 };

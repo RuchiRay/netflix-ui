@@ -50,7 +50,13 @@ export const Row = async ({
             const randomNumber = findRandom();
 
             return (
-              <MovieCard key={id} type={type} id={id} imgSrc={backdrop_path} />
+              <MovieCard
+                allData={movies}
+                key={id}
+                type={type}
+                id={id}
+                imgSrc={backdrop_path}
+              />
             );
           })}
         </div>

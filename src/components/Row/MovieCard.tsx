@@ -6,9 +6,10 @@ type MovieCard = {
   imgSrc: string;
   type: string;
   id: number;
+  allData: any;
 };
 
-export const MovieCard = ({ imgSrc, type, id }: MovieCard) => {
+export const MovieCard = ({ imgSrc, type, id, allData }: MovieCard) => {
   return (
     <div
       key={id}
@@ -26,7 +27,7 @@ export const MovieCard = ({ imgSrc, type, id }: MovieCard) => {
         )}
       </div>
       <div className="group-hover:block hidden ">
-        <CardInfo type={type} id={id} />
+        <CardInfo allData={allData} type={type} id={id} />
       </div>
     </div>
   );

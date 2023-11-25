@@ -7,15 +7,22 @@ import { Like } from "../icons/Like";
 import { Cross } from "../icons/Cross";
 import { findRandom } from "@/utilities/findRandom";
 import { Volume } from "../icons/Volume";
+import { MoreLikeThis } from "../MoreLikeThis/MoreLikeThis";
 
 type DetailModal = {
   open: boolean;
   closeModal: () => void;
   data?: any;
+  moreData?: any;
 };
 
-export const DetailModal = ({ open, closeModal, data }: DetailModal) => {
-  console.log(data, "data");
+export const DetailModal = ({
+  open,
+  closeModal,
+  data,
+  moreData,
+}: DetailModal) => {
+  //   console.log(data, "data");
 
   return (
     <Transition appear show={open} as={Fragment}>
@@ -43,8 +50,8 @@ export const DetailModal = ({ open, closeModal, data }: DetailModal) => {
               leaveFrom="opacity-100 scale-100"
               leaveTo="opacity-0 scale-95"
             >
-              <Dialog.Panel className="w-full  max-w-3xl transform overflow-hidden rounded-md bg-neutral-900 text-left align-middle shadow-xl transition-all">
-                <div className="w-full relative h-[450px]">
+              <Dialog.Panel className="w-full pb-10  max-w-4xl transform overflow-hidden rounded-md bg-neutral-900 text-left align-middle shadow-xl transition-all">
+                <div className="w-full  relative h-[450px]">
                   <Image
                     className="rounded-md rounded-b-none"
                     src={`https://image.tmdb.org/t/p/original/${
@@ -80,9 +87,6 @@ export const DetailModal = ({ open, closeModal, data }: DetailModal) => {
                       <div className="border p-1 text-xs border-neutral-500">
                         HD
                       </div>
-                      <div className="border text-sm p-1 border-neutral-500">
-                        U/A 16+
-                      </div>
                     </div>
                     <div className="flex text-sm gap-2 items-center">
                       <div className="border text-sm p-1 border-neutral-500">
@@ -96,6 +100,39 @@ export const DetailModal = ({ open, closeModal, data }: DetailModal) => {
                     <div>
                       <span className="text-white/30">Cast : </span>
                       <span>Anil Kapoor, Priyanka Chopra, Ranvir Singh</span>
+                    </div>
+
+                    <div>
+                      <span className="text-white/30">Genres : </span>
+                      {data?.genres.map((genre: any) => {
+                        return <span key={genre.id}>{genre.name}, </span>;
+                      })}
+                    </div>
+                    <div>
+                      <span className="text-white/30">This movie is : </span>
+                      <span>Charming, feel good, emotional</span>
+                    </div>
+                  </div>
+                </div>
+                <div className=" mt-12 ">
+                  <h1 className="text-2xl mb-6 font-semibold pl-10">
+                    More like this
+                  </h1>
+                  <MoreLikeThis data={moreData} />
+                </div>
+                <div className="mt-10"></div>
+                <div className="px-10 text-sm">
+                  <h1 className="text-2xl font-semibold ">
+                    About {data?.title}
+                  </h1>
+                  <div className="flex mt-6 flex-col gap-2">
+                    <div>
+                      <span className="text-white/30">Cast : </span>
+                      <span>Anil Kapoor, Priyanka Chopra, Ranvir Singh</span>
+                    </div>
+                    <div>
+                      <span className="text-white/30">Writer : </span>
+                      <span>Christopher Nola</span>
                     </div>
                     <div>
                       <span className="text-white/30">Genres : </span>
