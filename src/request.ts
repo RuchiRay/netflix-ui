@@ -5,7 +5,6 @@ export const REGION = "US";
 export const requests = {
   fetchTrending: `/trending/all/week?api_key=${NEXT_APP_API_KEY}&language=en-US`,
   fetchContinueWatching:`https://api.themoviedb.org/3/trending/movie/day?api_key=${NEXT_APP_API_KEY}`,
-  // fetchNetflixOriginals: `/discover/tv?api_key=${NEXT_APP_API_KEY}&with_networks=213`,
   // fetchTopRated:`/movie/top_rated?api_key=${API_KEY}&language=en-US`,
   // fetchActionMovies : `/discover/movie?api_key=${API_KEY}&with_genres=28`,
   // fetchComedyMovies : `/discover/movie?api_key=${API_KEY}&with_genres=35`,
@@ -20,7 +19,7 @@ export const requests = {
   // },
   // Movies
   
-  fetchTrendingMovies: `/trending/movies/week?api_key=${NEXT_APP_API_KEY}&sort_by=popularity.desc&language=${LANG}`,
+  fetchTrendingMovies: `/trending/movies/day?api_key=${NEXT_APP_API_KEY}&sort_by=popularity.desc&language=${LANG}`,
   fetchUpcomingMovies: `/movie/upcoming?api_key=${NEXT_APP_API_KEY}&language=${LANG}`,
   fetchTopRated: `/movie/top_rated?api_key=${NEXT_APP_API_KEY}&sort_by=popularity.desc&region=${REGION}`,
   fetchActionMovies: `/discover/movie?api_key=${NEXT_APP_API_KEY}&with_genres=28&sort_by=popularity.desc&language=${LANG}`,
