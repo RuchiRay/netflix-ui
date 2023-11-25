@@ -1,13 +1,19 @@
-import { Banner } from '@/components/Banner'
-import { RowCard } from '@/components/RowCard/RowCard'
-import { requests } from '@/request'
-import React from 'react'
+import { Banner } from "@/components/Banner";
+import { Row } from "@/components/Row/Row";
+import { requests } from "@/request";
+import React from "react";
 
 const HomePage = () => {
   return (
     <div>
       <Banner />
-      <RowCard title='Continue watching for Ruchi Ray' type='movie' showBar fetchUrl={requests.fetchContinueWatching} id="CW" />
+      <Row
+        title="Continue watching for Ruchi Ray"
+        type="movie"
+        showBar
+        fetchUrl={requests.fetchContinueWatching}
+        id="CW"
+      />
       {/* <RowCard title='TV shows' type='tv' fetchUrl={requests.discoverSeries} id="TVS" /> */}
       {/* <Row title='Top Rated on Netflix' type='movie' fetchUrl={requests.fetchTopRated} id="TRON" /> */}
       {/* <Row title='Trending Now' fetchUrl={requests.fetchTrending} id='TN' />
@@ -21,8 +27,7 @@ const HomePage = () => {
       <Row title='Animation' fetchUrl={requests.fetchAnimationSeries} id='AN' />
       <Row title='Upcoming' fetchUrl={requests.fetchUpcomingMovies} id='UP' /> */}
     </div>
+  );
+};
 
-  )
-}
-
-export default HomePage
+export default HomePage;

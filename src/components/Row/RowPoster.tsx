@@ -15,8 +15,8 @@ export const RowPoster = async ({ id, type }: RowPoster) => {
     // const [details, setdetails] = useState()
     const url = `/${type}/${id}?api_key=${NEXT_APP_API_KEY}&language=en-US`
 
-    const req = await axios.get(url)
-    const data = req.data
+    // const req = await axios.get(url)
+    // const data = req.data
     // console.log(req.data, 'url');
 
     // console.log(req, 'req', NEXT_APP_API_KEY, 'hello');
@@ -34,7 +34,7 @@ export const RowPoster = async ({ id, type }: RowPoster) => {
     return (
         <div className='p-4'>
             <Top />
-            <div className="flex gap-2 items-center mt-2 text-white/80">
+            {/* <div className="flex gap-2 items-center mt-2 text-white/80">
                 <p className='text-green-500'>{findRandom()}% Match</p>
                 <div className='border text-sm p-1 border-neutral-500'>U/A 16+</div>
                 <p>{data?.seasons?.length ?? 1} Season</p>
@@ -51,7 +51,7 @@ export const RowPoster = async ({ id, type }: RowPoster) => {
                         </div>
                     })
                 }
-            </div>
+            </div> */}
         </div>
     )
 }
