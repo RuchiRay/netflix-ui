@@ -6,7 +6,6 @@ import React from "react";
 const HomePage = () => {
   return (
     <div>
-      <Banner />
       <Row
         title="Continue watching for Ruchi Ray"
         type="movie"
