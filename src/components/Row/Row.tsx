@@ -8,9 +8,8 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
 // import 'react-lazy-load-image-component/src/effects/blur.css';
 import Image from "next/image";
-import { RowPoster } from "./RowPoster";
 import { findRandom } from "@/utilities/findRandom";
-import { CardImage } from "./CardImage";
+import { MovieCard } from "./MovieCard";
 
 type Row = {
   title: string;
@@ -51,7 +50,7 @@ export const Row = async ({
             const randomNumber = findRandom();
 
             return (
-              <CardImage key={id} type={type} id={id} imgSrc={backdrop_path} />
+              <MovieCard key={id} type={type} id={id} imgSrc={backdrop_path} />
             );
           })}
         </div>
