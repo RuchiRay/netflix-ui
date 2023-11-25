@@ -26,7 +26,7 @@ export const Navbar = () => {
     <div
       className={`${
         bgBlack && "bg-black"
-      } fade-top transition-colors ease-linear items-center  flex fixed w-full justify-between py-3  px-12 left-0 top-0 z-[1]`}
+      } fade-top transition-colors ease-linear items-center  flex fixed w-full justify-between py-3 px-6 md:px-12 left-0 top-0 z-[1]`}
     >
       <div className="flex items-center">
         <div className="w-28">
