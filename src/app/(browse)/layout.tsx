@@ -10,7 +10,7 @@ export default function BrowseLayout({
     <div className="flex flex-col w-full h-screen">
       <Navbar />
       <div>{children}</div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
