@@ -46,7 +46,7 @@ export const Navbar = () => {
           </Link>
           <Link href="/tv">Tv Series</Link>
           <Link href="/movies">Movies</Link>
-          <Link href="/popular">New and popular</Link>
+          <Link href="/newPopular">New and popular</Link>
         </div>
         <div className="md:hidden pl-4">
           <NavMenu />
@@ -113,7 +113,7 @@ const NavMenu = () => {
                 {({ active }) => (
                   <Link
                     className={`${active ? "text-white" : "text-white/50"} `}
-                    href="/tv"
+                    href="/movies"
                   >
                     Movies
                   </Link>
@@ -123,7 +123,7 @@ const NavMenu = () => {
                 {({ active }) => (
                   <Link
                     className={`${active ? "text-white" : "text-white/50"} `}
-                    href="/tv"
+                    href="/newPopular"
                   >
                     New and popular
                   </Link>
