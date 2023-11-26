@@ -5,13 +5,13 @@ import React from "react";
 const NewPopular = () => {
   return (
     <div>
-      <Row
+      {/* <Row
         type="movie"
         title="Trending"
         fetchUrl={requests.fetchTrendingMovies}
         id="AC"
         key="TRMP"
-      />
+      /> */}
       <Row
         type="movie"
         title="Upcoming"
